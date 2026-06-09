@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | OC StudyVault</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .notes-header{
+            padding:120px 8% 40px;
+            text-align:center;
+        }
+
+        .notes-header h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        .notes-header p{
+            color:#94A3B8;
+        }
+
+        .notes-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:24px;
+            padding:40px 8% 80px;
+        }
+
+        .note-card{
+            background:rgba(17,24,39,.65);
+            backdrop-filter:blur(18px);
+            border:1px solid rgba(255,255,255,.08);
+            border-radius:22px;
+            padding:25px;
+            transition:.3s;
+        }
+
+        .note-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .subject-tag{
+            display:inline-block;
+            padding:8px 14px;
+            border-radius:999px;
+            font-size:.85rem;
+            margin-bottom:15px;
+            background:rgba(99,102,241,.15);
+            color:#A5B4FC;
+        }
+
+        .note-card h3{
+            margin-bottom:10px;
+        }
+
+        .note-card p{
+            color:#94A3B8;
+            margin-bottom:18px;
+        }
+
+        .note-actions{
+            display:flex;
+            gap:12px;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            text-decoration:none;
+            padding:12px 18px;
+            border-radius:12px;
+            font-weight:600;
+        }
+
+        .download-btn{
+            background:linear-gradient(135deg,#6366F1,#8B5CF6);
+            color:white;
+        }
+
+        .preview-btn{
+            border:1px solid rgba(255,255,255,.1);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <span>OC</span> StudyVault
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notes.html">Notes</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="notes-header">
+
+    <h1>Study Notes Library</h1>
+
+    <p>
+        Browse and download high-quality notes for your preparation.
+    </p>
+
+</section>
+
+<section class="notes-grid">
+
+    <!-- Physics -->
+
+    <div class="note-card">
+
+        <span class="subject-tag">
+            Physics
+        </span>
+
+        <h3>Units & Dimensions</h3>
+
+        <p>
+            Complete theory, formulas and practice concepts.
+        </p>
+
+        <div class="note-actions">
+
+            <a href="notes/Physics/units-dimensions.pdf"
+               target="_blank"
+               class="btn preview-btn">
+               Preview
+            </a>
+
+            <a href="notes/Physics/units-dimensions.pdf"
+               download
+               class="btn download-btn">
+               Download
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Chemistry -->
+
+    <div class="note-card">
+
+        <span class="subject-tag">
+            Chemistry
+        </span>
+
+        <h3>Mole Concept</h3>
+
+        <p>
+            Complete notes with solved examples.
+        </p>
+
+        <div class="note-actions">
+
+            <a href="notes/Chemistry/mole-concept.pdf"
+               target="_blank"
+               class="btn preview-btn">
+               Preview
+            </a>
+
+            <a href="notes/Chemistry/mole-concept.pdf"
+               download
+               class="btn download-btn">
+               Download
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Maths -->
+
+    <div class="note-card">
+
+        <span class="subject-tag">
+            Mathematics
+        </span>
+
+        <h3>Quadratic Equations</h3>
+
+        <p>
+            Theory, formulas and shortcut methods.
+        </p>
+
+        <div class="note-actions">
+
+            <a href="notes/Maths/quadratic-equations.pdf"
+               target="_blank"
+               class="btn preview-btn">
+               Preview
+            </a>
+
+            <a href="notes/Maths/quadratic-equations.pdf"
+               download
+               class="btn download-btn">
+               Download
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>OC StudyVault</h3>
+    <p>Your personal repository of notes and learning resources.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
